@@ -1,6 +1,6 @@
 """metrics.py — 安全性指标评估
 
-对应课程报告 4.6 节 Metrics Assessment：
+对应技术报告 4.6 节 Metrics Assessment：
   - CollisionDetection：TimeGap = 车距 / 本车速度；TTC 碰撞时间
   - JerkMetrics：纵向急动度 / 横向急动度（加加速度）
   - VehicleSafety：综合安全指标
