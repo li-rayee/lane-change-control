@@ -1,6 +1,6 @@
 """scenario.py — 高速变道场景定义
 
-对应课程报告 5.1 节 Scenario_LC_15_StopnGo_Curved 的简化示意：
+对应技术报告 5.1 节 Scenario_LC_15_StopnGo_Curved 的简化示意：
   - 3 车道高速，车道宽 3.5 m
   - 本车（ego）起始位于中间车道，速度 15 m/s
   - 前方同车道有一辆慢车（10 m/s），触发向右变道避让
