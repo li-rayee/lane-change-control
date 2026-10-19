@@ -1,6 +1,6 @@
 """controller.py — 变道控制器（横向路径跟踪 + 纵向速度 PID）
 
-对应课程报告 4.4 节 Lane Change Controller：
+对应技术报告 4.4 节 Lane Change Controller：
   - 横向：融合虚拟车道中心（横向偏差）+ 预瞄曲率（期望航向），输出转向角
   - 纵向：速度跟踪，并限制纵向急动度（加加速度）
 此处用几何/反馈控制近似 MPC 的协同效果，便于无 MATLAB 环境复现。
