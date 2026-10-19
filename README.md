@@ -1,11 +1,11 @@
 # 高速路变道控制 / Highway Lane Change Control
 
-深圳大学《机器人学》课程项目 · 李瑞宇 · 电子信息工程 · 2025.06
+李瑞宇 · 2025.06
 关键词：自动驾驶 · 轨迹规划 · Frenet 坐标系 · MPC 路径跟踪 · 安全性验证
 
 这个项目就做一件事：在动态交通流里实时决定变道时机、生成既平滑又满足车辆运动学约束的轨迹，再用模型预测控制（MPC）精准跟踪，最后用量化指标卡一遍安全合规。
 
-仿真站在 MATLAB/Simulink 加 Automated Driving、Navigation、Model Predictive Control 三个工具箱上，用的是 MathWorks 官方示例模型 `Highway Lane Change Planner And Controller Test Bench`。仓库里同时放了 `matlab/` 和 `python/` 两套：`matlab/` 是课程报告里的真实测试台架和可视化代码（得有 MATLAB 授权），`python/` 是不依赖 MATLAB 就能跑的复现版——Frenet 轨迹生成、路径跟踪控制器、自行车模型、指标评估都在里面，适合快速吃透算法再做二次开发。
+仿真站在 MATLAB/Simulink 加 Automated Driving、Navigation、Model Predictive Control 三个工具箱上，用的是 MathWorks 官方示例模型 `Highway Lane Change Planner And Controller Test Bench`。仓库里同时放了 `matlab/` 和 `python/` 两套：`matlab/` 是原测试台架和可视化代码（得有 MATLAB 授权），`python/` 是不依赖 MATLAB 就能跑的复现版——Frenet 轨迹生成、路径跟踪控制器、自行车模型、指标评估都在里面，适合快速吃透算法再做二次开发。
 
 ## 背景
 
@@ -75,8 +75,8 @@ Navigation Toolbox 负责参考路径生成、Frenet 轨迹优化和碰撞检测
 
 | 文件 | 内容 |
 |---|---|
-| `matlab/run_test_case.m` | 测试台架：跑指定场景用例并生成仿真报告（来自报告第 5 章） |
-| `matlab/simulate_and_visualize.m` | 逐帧仿真和可视化（来自报告第 6.1 节） |
+| `matlab/run_test_case.m` | 测试台架：跑指定场景用例并生成仿真报告 |
+| `matlab/simulate_and_visualize.m` | 逐帧仿真和可视化 |
 | `matlab/planner_config.m` | 规划器、控制器、车辆参数和行为模式配置示例 |
 
 跑 MATLAB 代码得装上面三个 Toolbox，还要加载 MathWorks 示例模型 `HLCPlannerAndControllerTestBench`（见 Automated Driving Toolbox 文档）。
@@ -106,4 +106,4 @@ python main.py
 
 ## 安全与合规说明
 
-这个仓库是课程学习成果展示，代码和数据都是脱敏或示意版本，不含任何真实路测或企业数据。MATLAB 相关的模型和 helper 函数版权归 MathWorks，遵守它的许可证；仓库里的 MATLAB 代码只作学习参考，运行需要合法授权。自动驾驶算法严禁直接上实车，只能用于仿真和教学。
+这个仓库是算法复现与演示项目，代码和数据都是示意版本，不含任何真实路测数据。MATLAB 相关的模型和 helper 函数版权归 MathWorks，遵守它的许可证；仓库里的 MATLAB 代码只作参考，运行需要合法授权。自动驾驶算法严禁直接上实车，只能用于仿真研究。
