@@ -1,7 +1,7 @@
 % planner_config.m
 % -------------------------------------------------------------------------
 % 高速路变道控制 —— 规划器 / 控制器 / 车辆 参数配置示例
-% 整理自课程报告 4.2 节（Planner Configuration Parameters）与 5.1~5.3 节
+% 整理自技术报告 4.2 节（Planner Configuration Parameters）与 5.1~5.3 节
 % 各场景的安全需求表。数值为示例场景（LC_15 / LC_06 / LC_11）的共同配置。
 %
 % 在 Simulink 模型中，这些变量通过 Constant + BusCreator 注入对应子系统。
