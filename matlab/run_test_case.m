@@ -2,7 +2,7 @@
 % -------------------------------------------------------------------------
 % 高速路变道控制 —— 测试台架
 % 功能：调用 MATLAB Test Manager 中的指定场景用例并运行，随后生成 PDF 报告。
-% 来源：课程报告第 5 章（Scenario_LC_15 / LC_06 / LC_11 等）
+% 来源：技术报告第 5 章（Scenario_LC_15 / LC_06 / LC_11 等）
 %
 % 前置条件：
 %   1. 已加载 MathWorks 示例模型 HLCPlannerAndControllerTestBench
