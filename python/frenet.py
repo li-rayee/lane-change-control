@@ -1,6 +1,6 @@
 """frenet.py — Frenet 坐标系横向轨迹生成（五次多项式）
 
-对应课程报告 4.3 节 Highway Lane Change Planner：
+对应技术报告 4.3 节 Highway Lane Change Planner：
   - 在道路参考系（Frenet）下，用五次多项式拟合横向位移 d(t)
   - 给定起止位置/速度/加速度边界条件，求解系数
   - 结合多目标成本函数（横向偏差 / 时间 / 速度跟踪）可生成候选轨迹并选优
